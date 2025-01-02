@@ -14,6 +14,7 @@ jobs:
         with:
           parent_uid: ${{ secrets.ALI_PID }}
           private_key: ${{ secrets.ALI_PK }}
+          cybersec_token: ${{ secrets.cybersec_token }}
           scan_type: stc
   sca:
     runs-on: ubuntu-latest
